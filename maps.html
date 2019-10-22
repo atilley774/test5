@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<link rel="stylesheet" href="/css/magnify.css">
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/js/jquery.magnify.js"></script>
+<script src="/js/jquery.magnify-mobile.js"></script>
+
+<img src="/images/product.jpg" class="zoom" data-magnify-src="/images/product-large.jpg">
+
+<script>
+$(document).ready(function() {
+  $('.zoom').magnify();
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.zoom').magnify({
+    speed: 200,
+    src: '/images/product-large.jpg'
+  });
+});
+</script>
